@@ -5,6 +5,11 @@
     <title>blogs</title>
 </head>
 <body>
-   <h1>All blogs</h1>
+   <h1>All blogs are here</h1>
+   <a>{% for blog in blogs %}</a>
+   <h2>{{ blog.title }}</h2>
+   <h5>{{ blog.date }}</h5>
+   <p>{{ blog.description }}</p>
+   <a>{% enfor %}</a>
 </body>
 </html>
