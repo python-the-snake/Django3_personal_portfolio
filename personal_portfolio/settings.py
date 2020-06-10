@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'no-no-no friend'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -126,3 +126,17 @@ try:
     from .local_settings import *
 except ImportError:
     print("Looks like no local file. You must be on production")
+
+
+EMAIL_HOST = 'smtp.email-domain.com'
+EMAIL_HOST_USER = 'den@schalimov.com'
+EMAIL_HOST_PASSWORD = '1234'
+# если используется защищенное соединение
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+ADMINS = (
+    ('python-the-snake', 'den@schalimov.com'),
+)
+MANAGERS = ADMINS
