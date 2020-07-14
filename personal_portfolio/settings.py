@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'portfolio',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -98,6 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SUMMERNOTE_THEME = 'bs4'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
