@@ -4,6 +4,8 @@ from django_summernote.admin import SummernoteModelAdmin
 
 from.models.SomeModel import SomeModel
 
+import numba
+
 
 
 class PostAdmin(SummernoteModelAdmin):
